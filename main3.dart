@@ -4,120 +4,84 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Welcome Page',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFFE8694A),
-        ),
-        useMaterial3: true,
-      ),
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text(
-            'Welcome !',
-            style: TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          backgroundColor: const Color(0xFFE8694A),
-          centerTitle: true,
-        ),
-
-        body: Center(
+        backgroundColor: Colors.white,
+        body: Padding(
+          padding: const EdgeInsets.all(20),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                width: 260,
-                padding: const EdgeInsets.symmetric(
-                  vertical: 14,
-                  horizontal: 20,
-                ),
-                decoration: BoxDecoration(
-                  color: const Color(0xFF1A1A2E),
-                  borderRadius: BorderRadius.circular(8),
+                height: 100,
+                decoration: const ShapeDecoration(
+                  gradient: LinearGradient(
+                    colors: [Color(0xFFADD8E6), Color(0xFF00008B)],
+                    begin: Alignment.centerLeft,
+                    end: Alignment.centerRight,
+                  ),
+                  shape: StadiumBorder(),
                 ),
                 child: const Center(
                   child: Text(
-                    'My hobbies',
+                    'OOP',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 18,
-                      fontWeight: FontWeight.w600,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
               ),
 
-              const SizedBox(height: 16),
+              const SizedBox(height: 20),
 
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    width: 120,
-                    height: 80,
-                    decoration: BoxDecoration(
-                      color: const Color(0xFFE8A87C),
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: const Center(
-                      child: Text(
-                        'Football',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 16,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
+              Container(
+                height: 100,
+                decoration: const ShapeDecoration(
+                  gradient: LinearGradient(
+                    colors: [Color(0xFFADD8E6), Color(0xFF00008B)],
+                    begin: Alignment.centerLeft,
+                    end: Alignment.centerRight,
+                  ),
+                  shape: StadiumBorder(),
+                ),
+                child: const Center(
+                  child: Text(
+                    'DART',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
+                ),
+              ),
 
-                  const SizedBox(width: 16),
+              const SizedBox(height: 20),
 
-                  Container(
-                    width: 120,
-                    height: 80,
-                    decoration: BoxDecoration(
-                      color: const Color(0xFFD4622A),
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: const Center(
-                      child: Text(
-                        'Flutter',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 16,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
+              Container(
+                height: 100,
+                decoration: const ShapeDecoration(
+                  gradient: LinearGradient(
+                    colors: [Color(0xFFADD8E6), Color(0xFF00008B)],
+                    begin: Alignment.centerLeft,
+                    end: Alignment.centerRight,
+                  ),
+                  shape: StadiumBorder(),
+                ),
+                child: const Center(
+                  child: Text(
+                    'FLUTTER',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
-                ],
+                ),
               ),
-            ],
-          ),
-        ),
 
-        bottomNavigationBar: Container(
-          color: const Color(0xFFE8694A),
-          padding: const EdgeInsets.symmetric(vertical: 16),
-          child: const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              CircleAvatar(
-                radius: 16,
-                backgroundColor: Colors.white,
-              ),
-              CircleAvatar(
-                radius: 16,
-                backgroundColor: Colors.white,
-              ),
-              CircleAvatar(
-                radius: 16,
-                backgroundColor: Colors.white,
-              ),
+              const SizedBox(height: 20),
             ],
           ),
         ),
